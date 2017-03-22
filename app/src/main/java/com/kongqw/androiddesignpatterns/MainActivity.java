@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.kongqw.androiddesignpatterns.builder.BuilderActivity;
 import com.kongqw.androiddesignpatterns.singleton.SingletonActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,9 +18,19 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 单例设计模式
+     *
      * @param view view
      */
     public void onSingleInstance(View view) {
         startActivity(new Intent(this, SingletonActivity.class));
+    }
+
+    /**
+     * Builder设计模式
+     *
+     * @param view view
+     */
+    public void onBuilder(View view) {
+        startActivity(new Intent(this, BuilderActivity.class));
     }
 }
