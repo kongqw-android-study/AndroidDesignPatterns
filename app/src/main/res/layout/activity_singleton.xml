@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kongqw.androiddesignpatterns.singleton.SingletonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onHungerSingleton"
+            android:text="饿汉单例模式" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onLazySingleton"
+            android:text="懒汉单例模式" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:onClick="onDCLSingleton"
+            android:layout_height="wrap_content"
+            android:text="Double Check Lock（DCL）单例模式" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:onClick="onStaticInnerClassSingleton"
+            android:layout_height="wrap_content"
+            android:text="静态内部类单例模式" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:onClick="onEnumSingleton"
+            android:layout_height="wrap_content"
+            android:text="枚举单例模式" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
